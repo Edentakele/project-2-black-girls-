@@ -1,3 +1,15 @@
-body{
-    background-color: blanchedalmond;
+#he{
+    background-color: black;
+}
+th{
+    color: white;
+}
+#tabb{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    box-shadow: 0 0 20px black;
+}
+.topnav {
+    box-shadow: 0 0 20px black;
 }
