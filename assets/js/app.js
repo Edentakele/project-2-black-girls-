@@ -1,3 +1,17 @@
+const filter = document.querySelector("#search");
+filter.addEventListener('click', filterTasks);
+function filterTasks(e) {
+    let inputTxt = document.querySelector("#inputt").value;
+    let tasksFilter = document.querySelectorAll(".country-name");
+    tasksFilter.forEach( function(task) {
+        if (task.textContent.indexOf(inputTxt) == -1) {
+            task.parentElement.style.display = "none";
+        } else {
+            task.parentElement.style.display = "table-row";
+        }
+    })
+}
+
 $.ajax({
     url:"https://restcountries.eu/rest/v2/all",
     type:"get",
